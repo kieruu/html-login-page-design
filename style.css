@@ -1,0 +1,122 @@
+/**  Variable color usable across css file **/
+:root {
+	--purple: #6159e6;
+	--black: #39374e;
+	--pink: #ff6584;
+	--blue: #4d8af0;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #f8f8f8;
+	font-family: 'Teko', sans-serif;
+	height: 100vh;
+}
+
+.container {
+	display: flex;
+	height: 100%;
+}
+
+/** All div/elements inside the flex box will have the same width**/
+.flex-item {
+	flex: 1 1 0px;
+	width: 0;
+}
+
+.illustration {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.illustration h1 {
+	font-size: 46px;
+	margin-bottom: 20px;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.login {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.login form {
+	background-color: #fdfdfd;
+	width: 350px;
+	height: 100vh;
+	padding: 60px 50px 50px;
+	margin: 20px 50px 20px 0;
+	box-shadow: 4px 6px 14px -5px rgba(0, 0, 0, 0.54);
+	border-radius: 10px;
+}
+.login h2 {
+	font-size: 42px;
+	margin-bottom: 25px;
+}
+
+.login p {
+	font-size: 22px;
+	text-align: center;
+	margin: 20px 0;
+	color: #857590;
+}
+
+/** Class input/textfield (may use to other project in the future) **/
+.form-input {
+	padding: 15px 15px 15px 3px;
+	margin: 5px 0;
+	border: 0;
+	outline: 0;
+	width: 90%;
+	font-size: 22px;
+	/** This style  transform textfield with bottom border only along with gradient color**/
+	background: transparent;
+	border-bottom: 3px solid transparent;
+	border-image: linear-gradient(to right, var(--purple) 0%, var(--pink) 100%);
+	border-image-slice: 1;
+	/** **/
+	font-family: 'Teko', sans-serif;
+}
+
+/** Class button (may use to other project in the future) **/
+.form-button {
+	padding: 5px;
+	width: 95%;
+	border: none;
+	background-color: var(--blue);
+	color: white;
+	font-family: inherit;
+	font-size: 26px;
+}
+
+.form-button-align-left {
+	text-align: left;
+	padding-left: 30px;
+}
+
+.form-button-facebook {
+	background-color: #3b5998 !important;
+}
+.form-button-twitter {
+	background-color: #55acee !important;
+}
+
+.text-purple {
+	color: var(--purple);
+}
+.text-black {
+	color: var(--black);
+}
+.text-pink {
+	color: var(--pink);
+}
+.text-blue {
+	color: var(--purple);
+}
